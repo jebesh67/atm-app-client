@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+body {
+  @apply min-w-screen min-h-screen bg-gradient-to-b from-white to-gray-200 text-stone-200;
+  @apply text-xs sm:text-sm lg:text-base select-none;
+}
+
+.scroll-table::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.scroll-table::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.scroll-table::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.css-navs-text {
+  @apply text-base sm:text-xl lg:text-2xl;
+}
+
+.css-transition {
+  @apply transition ease-in-out duration-150;
+}
+
+.css-header-text {
+  @apply text-base sm:text-lg lg:text-xl;
+}
+
+.css-login-input {
+  @apply bg-stone-700 px-2 py-1 rounded-md shadow-md shadow-stone-950;
+  @apply border-none outline-none focus:ring-2 focus:ring-stone-500;
+  @apply text-stone-300 w-50 sm:w-60 lg:w-70;
+}
+
+.css-submit-button {
+  @apply bg-gradient-to-r from-teal-800/50 to-teal-400/50 w-fit px-4 py-1 rounded-md shadow-md shadow-stone-950 hover:cursor-pointer font-semibold;
+  @apply hover:from-teal-400/50 hover:to-teal-800/50 hover:scale-102 active:from-teal-400/40 active:to-teal-800/40;
+}
+
+.css-submit-button-disabled {
+  @apply bg-gradient-to-r from-teal-800/20 to-teal-400/20 w-fit px-4 py-1 rounded-md shadow-md shadow-stone-950 font-semibold;
+}
+
+.css-exit-button {
+  @apply bg-gradient-to-r from-red-800/50 to-red-400/50 w-fit px-4 py-1 rounded-md shadow-md shadow-stone-950 hover:cursor-pointer font-semibold;
+  @apply hover:from-red-400/50 hover:to-red-800/50 hover:scale-102 active:from-red-400/40 active:to-red-800/40;
+}
+
+.css-button-bal {
+  @apply bg-gradient-to-r from-teal-700 to-teal-400 py-4 w-full max-w-40 hover:from-teal-400 hover:to-teal-700 hover:scale-102 hover:cursor-pointer rounded-lg;
+  @apply font-semibold text-white hover:shadow-sm shadow-teal-950;
+}
+
+.css-admin-navs {
+  @apply p-2 hover:bg-stone-700 active:bg-stone-800 hover:cursor-pointer;
+}
+
+.css-user-edit-button {
+  @apply bg-gradient-to-r from-sky-700 to-sky-400 py-2 w-full max-w-40 hover:from-sky-400 hover:to-sky-700 hover:scale-102 hover:cursor-pointer rounded-lg;
+  @apply font-semibold text-white hover:shadow-sm shadow-sky-950;
+}
+
+.css-user-delete-button {
+  @apply bg-gradient-to-r from-amber-700 to-amber-400 py-2 w-full max-w-40 hover:from-amber-400 hover:to-amber-700 hover:scale-102 hover:cursor-pointer rounded-lg;
+  @apply font-semibold text-white hover:shadow-sm shadow-amber-950;
+}
+
+.css-user-delete-button-disabled {
+  @apply bg-gradient-to-r from-amber-700 to-amber-400 py-2 w-full max-w-40 rounded-lg;
+  @apply font-semibold text-white;
+  @apply opacity-60 cursor-not-allowed;
+}
+
+.css-user-save-button {
+  @apply bg-gradient-to-r from-teal-700 to-teal-400 py-2 w-full max-w-40 hover:from-teal-400 hover:to-teal-700 hover:scale-102 hover:cursor-pointer rounded-lg;
+  @apply font-semibold text-white hover:shadow-sm shadow-teal-950;
+}
