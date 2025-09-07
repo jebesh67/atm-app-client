@@ -48,7 +48,7 @@ const UserCard = ({user, handleExit}: UserCardProps) => {
       setSuccess(null);
       
       const response = await axios.post(
-        "http://localhost:3000/api/admin/editUser",
+        `${ process.env.NEXT_PUBLIC_BACKEND_URL }/api/admin/editUser`,
         {
           id: localUser._id,
           name,
@@ -92,7 +92,7 @@ const UserCard = ({user, handleExit}: UserCardProps) => {
       const res: AxiosResponse<{
         success: boolean;
         message: string;
-      }> = await axios.delete("http://localhost:3000/api/admin/deleteUser", {
+      }> = await axios.delete(`${ process.env.NEXT_PUBLIC_BACKEND_URL }/api/admin/deleteUser`, {
         headers: {
           "Content-Type": "application/json",
         },

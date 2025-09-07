@@ -17,7 +17,8 @@ const TransactionStats = () => {
   const {data: transactions} = useAllTransactions();
   
   if (!transactions || transactions.length === 0) {
-    return <p>No transactions yet</p>;
+    return <div className="mt-18 flex justify-center items-center border border-gray-300 py-10 px-20 rounded-md text-red-700">No
+      transactions yet</div>;
   }
   
   const dates = [
